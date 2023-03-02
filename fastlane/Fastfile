@@ -38,6 +38,7 @@ platform :ios do
       export_method: "development",
       output_name: "test.ipa",
       clean: options[:clean],
+      skip_codesigning: true
       skip_package_dependencies_resolution: options[:skip_package_dependencies_resolution]
       # silent: true,
       # clean: true
