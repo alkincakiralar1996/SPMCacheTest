@@ -33,12 +33,13 @@ platform :ios do
 
     increment_build_number(xcodeproj: "spmcachetet.xcodeproj")
 
+    # disable_automatic_code_signing(path: "spmcachetet.xcodeproj")
+
     build_app(
       scheme: "spmcachetet", 
       export_method: "development",
       output_name: "test.ipa",
       clean: options[:clean],
-      skip_codesigning: true,
       skip_package_dependencies_resolution: options[:skip_package_dependencies_resolution]
       # silent: true,
       # clean: true
@@ -47,18 +48,3 @@ platform :ios do
     delete_temp_keychain(keychain_name)
   end
 end
-
-
-# default_platform :ios
-
-# platform :ios do
-    
-#     desc 'Builds project and executes unit tests'
-#     lane :unit_test do |options|
-#       scan(
-#         clean: options[:clean],
-#         skip_package_dependencies_resolution: options[:skip_package_dependencies_resolution]
-#       )
-#     end
-
-# end
