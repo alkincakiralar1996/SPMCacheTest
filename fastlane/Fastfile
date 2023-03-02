@@ -47,6 +47,7 @@ platform :ios do
 
     gym(
       scheme: "spmcachetet", 
+      skip_package_dependencies_resolution: true,
       export_method: "development"
     )
 
