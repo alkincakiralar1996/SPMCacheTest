@@ -1,0 +1,20 @@
+name: build-ios-app
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    name: Deploying to TestFlight
+    runs-on: macos-latest
+
+    steps:
+       - uses: actions/cache@v3
+         name: "Cache: SPM"
+         with:
+           path: .build
+           key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
+           restore-keys: |
+              ${{ runner.os }}-spm-
+       - uses: actions/checkout@v1
+       - run: fastlane beta
