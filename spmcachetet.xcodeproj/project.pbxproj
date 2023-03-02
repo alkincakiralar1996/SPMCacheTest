@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4442DC1629B0BB93008F158E /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 4442DC1529B0BB93008F158E /* Swinject */; };
 		448395D129B0B6CB0048A1EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448395D029B0B6CB0048A1EF /* AppDelegate.swift */; };
 		448395D329B0B6CB0048A1EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448395D229B0B6CB0048A1EF /* SceneDelegate.swift */; };
 		448395D529B0B6CB0048A1EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448395D429B0B6CB0048A1EF /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 			files = (
 				448395E929B0B6F20048A1EF /* Algorithms in Frameworks */,
 				448395E629B0B6E20048A1EF /* Alamofire in Frameworks */,
+				4442DC1629B0BB93008F158E /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +92,7 @@
 			packageProductDependencies = (
 				448395E529B0B6E20048A1EF /* Alamofire */,
 				448395E829B0B6F20048A1EF /* Algorithms */,
+				4442DC1529B0BB93008F158E /* Swinject */,
 			);
 			productName = spmcachetet;
 			productReference = 448395CD29B0B6CB0048A1EF /* spmcachetet.app */;
@@ -122,6 +125,7 @@
 			packageReferences = (
 				448395E429B0B6E20048A1EF /* XCRemoteSwiftPackageReference "Alamofire" */,
 				448395E729B0B6F20048A1EF /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				4442DC1429B0BB93008F158E /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			productRefGroup = 448395CE29B0B6CB0048A1EF /* Products */;
 			projectDirPath = "";
@@ -298,7 +302,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = 3UVKHQUHJ4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = spmcachetet/Info.plist;
@@ -326,7 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = 3UVKHQUHJ4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = spmcachetet/Info.plist;
@@ -372,6 +376,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4442DC1429B0BB93008F158E /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		448395E429B0B6E20048A1EF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -391,6 +403,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4442DC1529B0BB93008F158E /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4442DC1429B0BB93008F158E /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
 		448395E529B0B6E20048A1EF /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 448395E429B0B6E20048A1EF /* XCRemoteSwiftPackageReference "Alamofire" */;

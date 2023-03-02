@@ -35,8 +35,12 @@ platform :ios do
 
     build_app(
       scheme: "spmcachetet", 
+      export_method: "development",
+      # output_name: "test.ipa",
+      # silent: true,
+      # clean: true
     )
 
-    delete_temp_keychain(keychain_name)
+    # delete_temp_keychain(keychain_name)
   end
 end
