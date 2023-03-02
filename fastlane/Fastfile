@@ -35,8 +35,8 @@ platform :ios do
 
     build_app(
       scheme: "spmcachetet", 
-      export_method: "development",
-      # output_name: "test.ipa",
+      export_method: "development"
+      output_name: "test.ipa"
       # silent: true,
       # clean: true
     )
