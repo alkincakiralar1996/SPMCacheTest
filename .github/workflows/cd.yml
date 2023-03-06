@@ -9,18 +9,42 @@ jobs:
     runs-on: macos-latest
 
     steps:
-       - name: Swift Packages Cache
-         uses: actions/cache@v2
-         id: cache
+       - name: Restore Cached Dependencies
+         id: cache-primes-restore
+         uses: actions/cache/restore@v3
          with:
           path: |
             SourcePackages/
-          # key: ${{ runner.os }}-deps-v1-${{ hashFiles('spmcachetet.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
-          key: spm-cache-{{ checksum "spmcachetet.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved" }}
-          restore-keys: spm-cache-{{ checksum "spmcachetet.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved" }}
+          key: ${{ runner.os }}-primes
 
-       - uses: actions/checkout@v1
+       - name: Xcode Build
+         uses: actions/checkout@v1
        - run: xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -clonedSourcePackagesDirPath SourcePackages -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
+
+       - name: Save Cached Dependencies
+         id: cache-primes-restore
+         uses: actions/cache/save@v3
+         with:
+          path: |
+            SourcePackages/
+          key: ${{ steps.cache-primes-restore.outputs.cache-primary-key }}
+
+      #  - name: Swift Packages Cache
+      #    uses: actions/cache@v2
+      #    id: cache
+      #    with:
+      #     path: |
+      #       SourcePackages/
+      #     # key: ${{ runner.os }}-deps-v1-${{ hashFiles('spmcachetet.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
+      #     key: spm-cache-{{ checksum "spmcachetet.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved" }}
+      #     restore-keys: spm-cache-{{ checksum "spmcachetet.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved" }}
+
+
+#       with:
+#         path: |
+#           path/to/dependencies
+#           some/other/dependencies
+#         key: ${{ steps.cache-primes-restore.outputs.cache-primary-key }}
 
 #       version: 2.1
 
