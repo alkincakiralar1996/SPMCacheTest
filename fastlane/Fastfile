@@ -48,4 +48,4 @@ platform :ios do
   end
 end
 
-
+xcodebuild archive -scheme spmcachetet -sdk iphoneos -allowProvisioningUpdates -archivePath spmcachetet.xcarchive
