@@ -40,9 +40,12 @@ platform :ios do
       },
       silent: true,
       xcargs: "-allowProvisioningUpdates",
-      output_name: "spmTEST.ipa"
+      output_name: "spmTEST.ipa",
+      skip_codesigning: true
     )
 
     delete_temp_keychain(keychain_name)
   end
 end
+
+

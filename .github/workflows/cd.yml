@@ -10,7 +10,7 @@ jobs:
 
     steps:
        - uses: actions/checkout@v1
-       - run: fastlane beta
+       - run:  bundle exec fastlane beta
 
        - name: Swift Packages Cache
          uses: actions/cache@v2
