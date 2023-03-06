@@ -14,12 +14,13 @@ jobs:
          id: cache
          with:
           path: |
-            /Users/runner/work/SPMCacheTest/SPMCacheTest/SourcePackages/
-          key: ${{ runner.os }}-deps-v1-${{ hashFiles('spmcachetet.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
-          restore-keys: ${{ runner.os }}-deps-v1-
+            SourcePackages/
+          # key: ${{ runner.os }}-deps-v1-${{ hashFiles('spmcachetet.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
+          key: spm-cache-{{ checksum "spmcachetet.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved" }}
+          restore-keys: spm-cache-{{ checksum "spmcachetet.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved" }}
 
        - uses: actions/checkout@v1
-       - run: xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -clonedSourcePackagesDirPath /Users/runner/work/SPMCacheTest/SPMCacheTest/SourcePackages -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
+       - run: xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -clonedSourcePackagesDirPath SourcePackages -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
 
 #       version: 2.1
 
