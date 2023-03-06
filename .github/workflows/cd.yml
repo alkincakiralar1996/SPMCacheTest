@@ -10,8 +10,7 @@ jobs:
 
     steps:
        - uses: actions/checkout@v1
-      #  - run:  xcodebuild archive -scheme spmcachetet -sdk iphoneos -allowProvisioningUpdates -archivePath spmcachetet.xcarchive
-       - run: xcodebuild -scheme spmcachetet build
+       - run:  xcodebuild archive -scheme spmcachetet -sdk iphoneos -allowProvisioningUpdates -archivePath spmcachetet.xcarchive
 
        - name: Swift Packages Cache
          uses: actions/cache@v2
