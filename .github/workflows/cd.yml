@@ -14,37 +14,29 @@ jobs:
          id: cache
          with:
           path: |
-            SourcePackages
+            SourcePackages/
           key: ${{ runner.os }}-deps-v1-${{ hashFiles('spmcachetet.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
           restore-keys: ${{ runner.os }}-deps-v1-
 
        - uses: actions/checkout@v1
-      #  - run:  xcodebuild archive -scheme spmcachetet -sdk iphoneos -allowProvisioningUpdates -archivePath spmcachetet.xcarchive
-      #  - run: xcodebuild -scheme spmcachetet build -allowProvisioningUpdates
        - run: xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -clonedSourcePackagesDirPath SourcePackages -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
 
 #       version: 2.1
 
 # jobs:
 #   build:
-
 #     macos:
-
 #       xcode: "11.6.0"
-
 #     steps:
 #       - checkout
 #       - restore_cache: 
 #           key: spm-cache-{{ checksum "spm-cache-test.xcodeproj/project.xcworkspace/ xcshareddata/swiftpm/Package.resolved" }}
-
 #   - run:
 #           name: Install missing gems
 #           command: bundle install
-
 #       - run:
 #           name: Build and test
 #           command: bundle exec fastlane build_and_test
-
 #       - save_cache:
 #           paths:
 #             - SourcePackages/
