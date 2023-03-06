@@ -39,6 +39,7 @@ platform :ios do
         method: "development"
       },
       silent: true,
+      xcargs: "-allowProvisioningUpdates",
       output_name: "spmTEST.ipa"
     )
 
