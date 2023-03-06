@@ -20,7 +20,7 @@ jobs:
       - name: "Cache: SPM"
         uses: actions/cache@v3
         with:
-          path: /Users/runner/Library/Developer/Xcode/DerivedData/spmcachetet-*/SourcePackages/
+          path: /Users/runner/Library/Developer/Xcode/DerivedData/spmcachetet*/SourcePackages/
           key: ${{ runner.os }}-spm-${{ hashFiles('spmcachetet.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
           restore-keys: |
             ${{ runner.os }}-spm-
