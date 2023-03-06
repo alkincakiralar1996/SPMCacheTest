@@ -31,33 +31,16 @@ platform :ios do
 
     ensure_temp_keychain(keychain_name, keychain_password)
 
-    # increment_build_number(xcodeproj: "spmcachetet.xcodeproj")
+    increment_build_number(xcodeproj: "spmcachetet.xcodeproj")
 
-    # disable_automatic_code_signing(path: "spmcachetet.xcodeproj")
-
-    # build_app(
-    #   scheme: "spmcachetet", 
-    #   export_method: "development",
-    #   output_name: "test.ipa",
-    #   clean: options[:clean],
-    #   skip_package_dependencies_resolution: options[:skip_package_dependencies_resolution]
-    #   # silent: true,
-    #   # clean: true
-    # )
-
-    # gym(
-    #   scheme: "spmcachetet", 
-    #   skip_package_dependencies_resolution: options[:skip_package_dependencies_resolution],
-    #   export_options: {
-    #     method: "development",
-    #     signingStyle: "manual",
-    #     provisioningProfiles: { 
-    #         "dev.spmcachetet" => ""
-    #     }
-    #   }
-    # )
-
-    # upload_to_testflight(ipa: "tasdaest.ipa")
+    gym(
+      scheme: "spmcachetet", 
+      export_options: {
+        method: "development"
+      },
+      silent: true,
+      output_name: "spmTEST.ipa"
+    )
 
     delete_temp_keychain(keychain_name)
   end

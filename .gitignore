@@ -4,8 +4,5 @@ Build
 Fastlane/report.xml
 Fastlane/test_output
 
-test.ipa
-test.app.dSYM.zip
-spmcachetet.ipa
-spmcachetet.app.dSYM.zip
-spmcachetet.ipa
+**.app.dSYM.zip
+**.ipa
