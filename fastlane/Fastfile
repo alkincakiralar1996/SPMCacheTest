@@ -48,4 +48,9 @@ platform :ios do
   end
 end
 
-xcodebuild archive -scheme spmcachetet -sdk iphoneos -allowProvisioningUpdates -archivePath spmcachetet.xcarchive
+# xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
+
+# xcodebuild -scheme spmcachetet build -allowProvisioningUpdates
+
+
+
