@@ -9,25 +9,33 @@ jobs:
     runs-on: macos-latest
 
     steps:
-       - name: Restore Cached Dependencies
-         id: cache-primes-restore
-         uses: actions/cache/restore@v3
-         with:
-          path: |
-            SourcePackages/
-          key: ${{ runner.os }}-primes
+      #  - name: Restore Cached Dependencies
+      #    id: cache-primes-restore
+      #    uses: actions/cache/restore@v3
+      #    with:
+      #     path: |
+      #       SourcePackages/
+      #     key: ${{ runner.os }}-primes
 
-       - name: Xcode Build
-         uses: actions/checkout@v1
-       - run: xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -clonedSourcePackagesDirPath /Users/runner/work/SPMCacheTest/SPMCacheTest/SourcePackages -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
+      - name: "Cache: SPM"
+        uses: actions/cache@v3
+        with:
+          path: ~/Library/Developer/Xcode/DerivedData/spmcachetet/SourcePackages/
+          key: ${{ runner.os }}-spm-${{ hashFiles('spmcachetet.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
+          restore-keys: |
+            ${{ runner.os }}-spm-
 
-       - name: Save Cached Dependencies
-         id: cache-primes-save
-         uses: actions/cache/save@v3
-         with:
-          path: |
-            SourcePackages/
-          key: ${{ steps.cache-primes-restore.outputs.cache-primary-key }}
+      - name: Xcode Build
+        uses: actions/checkout@v1
+      - run: xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -clonedSourcePackagesDirPath /Users/runner/work/SPMCacheTest/SPMCacheTest/SourcePackages -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
+
+      #  - name: Save Cached Dependencies
+      #    id: cache-primes-save
+      #    uses: actions/cache/save@v3
+      #    with:
+      #     path: |
+      #       SourcePackages/
+      #     key: ${{ steps.cache-primes-restore.outputs.cache-primary-key }}
 
       #  - name: Swift Packages Cache
       #    uses: actions/cache@v2
