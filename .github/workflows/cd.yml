@@ -22,7 +22,7 @@ jobs:
        - run: xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -clonedSourcePackagesDirPath SourcePackages -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
 
        - name: Save Cached Dependencies
-         id: cache-primes-restore
+         id: cache-primes-save
          uses: actions/cache/save@v3
          with:
           path: |
