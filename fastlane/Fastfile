@@ -45,11 +45,17 @@ platform :ios do
     #   # clean: true
     # )
 
-    gym(
-      scheme: "spmcachetet", 
-      skip_package_dependencies_resolution: options[:skip_package_dependencies_resolution],
-      export_method: "development"
-    )
+    # gym(
+    #   scheme: "spmcachetet", 
+    #   skip_package_dependencies_resolution: options[:skip_package_dependencies_resolution],
+    #   export_options: {
+    #     method: "development",
+    #     signingStyle: "manual",
+    #     provisioningProfiles: { 
+    #         "dev.spmcachetet" => ""
+    #     }
+    #   }
+    # )
 
     # upload_to_testflight(ipa: "tasdaest.ipa")
 
