@@ -20,14 +20,14 @@ jobs:
       - name: "Cache: SPM"
         uses: actions/cache@v3
         with:
-          path: /Users/runner/Library/Developer/Xcode/DerivedData/spmcachetet*/SourcePackages/
+          path: ~/Library/Developer/Xcode/DerivedData/spmcachetet*/SourcePackages/
           key: ${{ runner.os }}-spm-${{ hashFiles('spmcachetet.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
           restore-keys: |
             ${{ runner.os }}-spm-
 
       - name: Xcode Build
         uses: actions/checkout@v1
-      - run: xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -clonedSourcePackagesDirPath /Users/runner/work/SPMCacheTest/SPMCacheTest/SourcePackages -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
+      - run: xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -clonedSourcePackagesDirPath SourcePackages -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
 
       #  - name: Save Cached Dependencies
       #    id: cache-primes-save
