@@ -9,6 +9,9 @@ jobs:
     runs-on: macos-latest
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
       - name: "Cache: SPM"
         uses: actions/cache@v3
         with:
@@ -17,9 +20,8 @@ jobs:
             restore-keys: |
               ${{ runner.os }}-spm-
 
-      - name: Xcode Build
-        uses: actions/checkout@v1
-      - run: cd /Users/runner/work/SPMCacheTest/SPMCacheTest; ls;
+      - name: Devamke
+        run: cd /Users/runner/work/SPMCacheTest/SPMCacheTest; ls;
       - run: cd /Users/runner/work/SPMCacheTest/SPMCacheTest/SourcePackages; ls;
       # - run: cd /Users/runner/work/SPMCacheTest/SPMCacheTest; ls; echo go
       # - run: xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -clonedSourcePackagesDirPath /Users/runner/work/SPMCacheTest/SPMCacheTest/SourcePackages -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
