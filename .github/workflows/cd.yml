@@ -9,16 +9,16 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - name: "Cache: SPM"
-        uses: actions/cache@v3
-        with:
-            path: SourcePackages
-            key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
-            restore-keys: |
-              ${{ runner.os }}-spm-
+      # - name: "Cache: SPM"
+      #   uses: actions/cache@v3
+      #   with:
+      #       path: SourcePackages
+      #       key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
+      #       restore-keys: |
+      #         ${{ runner.os }}-spm-
 
       - name: Xcode Build
         uses: actions/checkout@v1
-      - run: echo test
+      - run: echo test; echo bb
       # - run: xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -clonedSourcePackagesDirPath SourcePackages -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
       # - run: fastlane beta
