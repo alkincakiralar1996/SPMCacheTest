@@ -21,11 +21,4 @@ jobs:
               ${{ runner.os }}-spm-
 
       - name: Devamke
-        run: cd /Users/runner/work/SPMCacheTest/SPMCacheTest; ls;
-      - run: cd /Users/runner/work/SPMCacheTest/SPMCacheTest/SourcePackages; ls;
-      # - run: cd /Users/runner/work/SPMCacheTest/SPMCacheTest; ls; echo go
-      # - run: xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -clonedSourcePackagesDirPath /Users/runner/work/SPMCacheTest/SPMCacheTest/SourcePackages -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
-      # - run: fastlane beta
-
-
-      # /Users/runner/Library/Developer/Xcode/DerivedData/spmcachetet-bwrourzvvavfwebiubkpzheduuwk
+        run: xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -clonedSourcePackagesDirPath /Users/runner/work/SPMCacheTest/SPMCacheTest/SourcePackages -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
