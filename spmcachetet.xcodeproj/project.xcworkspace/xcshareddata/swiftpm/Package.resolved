@@ -8,6 +8,42 @@
         "branch" : "master",
         "revision" : "e68cfdf9c5aa4e69f675198a3cf8bef72c7cdede"
       }
+    },
+    {
+      "identity" : "instructions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ephread/Instructions.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "5958c4d62733eaa0e8fc3a8f68b9c99b4c6e641e"
+      }
+    },
+    {
+      "identity" : "kractivityindicatorview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/krimpedance/KRActivityIndicatorView.git",
+      "state" : {
+        "revision" : "bcb0e841d6de0cd343a32bd5056580a56d06c0bc",
+        "version" : "3.0.7"
+      }
+    },
+    {
+      "identity" : "krprogresshud",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/krimpedance/KRProgressHUD.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "265142816d8f8ea93840accaf4ac7c49998e77c2"
+      }
+    },
+    {
+      "identity" : "swinject",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Swinject/Swinject.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "dfb78563c581eea560ea90c19dbe8d1d93d11260"
+      }
     }
   ],
   "version" : 2

@@ -33,16 +33,22 @@ platform :ios do
 
     increment_build_number(xcodeproj: "spmcachetet.xcodeproj")
 
-    gym(
-      scheme: "spmcachetet", 
-      export_options: {
-        method: "development"
-      },
-      silent: true,
-      xcargs: "-allowProvisioningUpdates",
-      output_name: "spmTEST.ipa",
-      skip_codesigning: true
+    scan(
+      devices: ["iPhone 14"],
+      cloned_source_packages_path: "SourcePackages",
+      disable_package_automatic_updates: true
     )
+
+    # gym(
+    #   scheme: "spmcachetet", 
+    #   export_options: {
+    #     method: "development"
+    #   },
+    #   silent: true,
+    #   xcargs: "-allowProvisioningUpdates",
+    #   output_name: "spmTEST.ipa",
+    #   skip_codesigning: true
+    # )
 
     delete_temp_keychain(keychain_name)
   end

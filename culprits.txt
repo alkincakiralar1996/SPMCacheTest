@@ -1,0 +1,99 @@
+6.93ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Request.swift:979:17	instance method cURLDescription()
+6.57ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/AFError.swift:801:38	getter localizedDescription
+6.24ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/URLEncodedFormEncoder.swift:211:14	instance method encode(_:)
+5.50ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/URLEncodedFormEncoder.swift:152:14	instance method encode(_:)
+5.08ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/URLEncodedFormEncoder.swift:582:18	instance method set(_:to:at:)
+4.27ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/MultipartFormData.swift:150:17	instance method append(_:withName:fileName:mimeType:)
+3.53ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ResponseSerialization.swift:640:17	instance method serialize(request:response:data:error:)
+3.53ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/AFError.swift:456:42	getter downloadResumeData
+3.27ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/AuthenticationInterceptor.swift:355:18	instance method isRefreshExcessive(insideLock:)
+3.26ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ResponseSerialization.swift:212:18	instance method _response(queue:responseSerializer:completionHandler:)
+3.19ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ResponseSerialization.swift:349:18	instance method _response(queue:responseSerializer:completionHandler:)
+3.18ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ParameterEncoder.swift:159:15	instance method encode(_:into:)
+3.07ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Request.swift:533:10	instance method appendResponseSerializer(_:)
+3.01ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ResponseSerialization.swift:93:17	instance method preprocess(_:)
+2.93ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/AFError.swift:661:42	getter errorDescription
+2.92ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/URLEncodedFormEncoder.swift:231:22	instance method convert(_:usingSeparator:)
+2.92ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Response.swift:98:41	getter debugDescription
+2.90ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Session.swift:108:12	initializer init(session:delegate:rootQueue:startRequestsImmediately:requestQueue:serializationQueue:interceptor:serverTrustManager:redirectHandler:cachedResponseHandler:eventMonitors:)
+2.86ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Response.swift:285:41	getter debugDescription
+2.86ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/HTTPHeaders.swift:416:10	instance method qualityEncoded()
+2.48ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/RetryPolicy.swift:308:15	instance method retry(_:for:dueTo:completion:)
+2.45ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ServerTrustEvaluation.swift:728:32	getter isSuccess
+2.43ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ParameterEncoding.swift:159:17	instance method encode(_:with:)
+2.32ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/RequestTaskMap.swift:89:20	getter count
+2.27ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Request.swift:1167:17	instance method validate(_:)
+2.24ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ResponseSerialization.swift:148:17	instance method emptyResponseAllowed(forRequest:response:)
+2.23ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/MultipartFormData.swift:200:17	instance method append(_:withName:fileName:mimeType:)
+2.22ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ServerTrustEvaluation.swift:343:17	instance method evaluate(_:forHost:)
+2.19ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/RequestTaskMap.swift:102:23	getter isEmpty
+2.19ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Request.swift:1740:17	instance method validate(_:)
+2.18ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Request.swift:1338:17	instance method validate(_:)
+2.11ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ResponseSerialization.swift:941:17	instance method serialize(request:response:data:error:)
+2.07ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ParameterEncoding.swift:192:17	instance method queryComponents(fromKey:value:)
+2.07ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/AuthenticationInterceptor.swift:330:18	instance method refresh(_:for:insideLock:)
+2.06ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/AFError.swift:734:38	getter localizedDescription
+1.96ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ParameterEncoding.swift:268:17	instance method encode(_:with:)
+1.90ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/NetworkReachabilityManager.swift:167:15	instance method startListening(onQueue:onUpdatePerforming:)
+1.88ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Session.swift:173:24	initializer init(configuration:delegate:rootQueue:startRequestsImmediately:requestQueue:serializationQueue:interceptor:serverTrustManager:redirectHandler:cachedResponseHandler:eventMonitors:)
+1.88ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/HTTPHeaders.swift:97:26	instance method sort()
+1.85ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ResponseSerialization.swift:784:17	instance method serialize(request:response:data:error:)
+1.84ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/NetworkReachabilityManager.swift:277:37	getter readableDescription
+1.82ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/AFError.swift:827:38	getter localizedDescription
+1.79ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ParameterEncoder.swift:75:15	instance method encode(_:into:)
+1.78ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/MultipartFormData.swift:402:18	instance method encodeBodyStream(for:)
+1.73ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Session.swift:1050:10	instance method performSetupOperations(for:convertible:shouldCreateTask:)
+1.70ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Request.swift:1149:10	instance method updateDownloadProgress()
+1.69ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ResponseSerialization.swift:520:17	instance method serialize(request:response:data:error:)
+1.69ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/MultipartFormData.swift:394:18	instance method encodeHeaders(for:)
+1.67ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Request.swift:1700:18	instance method cancel(optionallyProducingResumeData:)
+1.66ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ParameterEncoding.swift:300:17	instance method encode(_:withJSONObject:)
+1.63ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ResponseSerialization.swift:1171:17	instance method responseStream(using:on:stream:)
+1.63ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/HTTPHeaders.swift:266:24	static method authorization(username:password:)
+1.62ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ResponseSerialization.swift:156:17	instance method serializeDownload(request:response:fileURL:error:)
+1.58ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Response.swift:428:17	static method description(for:headers:allowingPrintableTypes:maximumLength:)
+1.55ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Request.swift:1133:10	instance method didReceive(data:)
+1.53ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/SessionDelegate.swift:299:15	instance method urlSession(_:downloadTask:didFinishDownloadingTo:)
+1.52ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/MultipartUpload.swift:46:10	instance method build()
+1.45ms	<invalid loc>	static method __derived_struct_equals(_:_:)
+1.45ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Request.swift:804:17	instance method redirect(using:)
+1.44ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/URLRequest+Alamofire.swift:34:17	instance method validate()
+1.43ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/AuthenticationInterceptor.swift:250:17	instance method adapt(_:for:completion:)
+1.41ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Concurrency.swift:38:17	instance method uploadProgress(bufferingPolicy:)
+1.40ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/SessionDelegate.swift:86:15	instance method urlSession(_:task:didReceive:completionHandler:)
+1.40ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/MultipartFormData.swift:452:18	instance method writeBodyStream(for:to:)
+1.39ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ResponseSerialization.swift:462:17	instance method serializeDownload(request:response:fileURL:error:)
+1.36ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/MultipartFormData.swift:64:21	static method boundaryData(forBoundaryType:boundary:)
+1.34ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Request.swift:823:17	instance method cacheResponse(using:)
+1.34ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ParameterEncoding.swift:226:18	instance method query(_:)
+1.34ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/HTTPHeaders.swift:327:10	instance method index(of:)
+1.31ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ResponseSerialization.swift:1212:17	instance method responseStreamString(on:stream:)
+1.29ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/AFError.swift:861:38	getter localizedDescription
+1.27ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ResponseSerialization.swift:1239:18	instance method updateAndCompleteIfPossible()
+1.26ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/MultipartFormData.swift:539:18	instance method setBodyPartError(withReason:)
+1.24ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Validation.swift:41:9	initializer init(_:)
+1.23ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Request.swift:964:36	getter description
+1.22ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/MultipartFormData.swift:57:21	static method randomBoundary()
+1.21ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/StringEncoding+Alamofire.swift:33:5	initializer init(ianaCharsetName:)
+1.20ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Request.swift:669:17	instance method cancel()
+1.20ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Request.swift:134:36	getter isInitialized
+1.18ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/MultipartFormData.swift:493:18	instance method write(_:to:)
+1.17ms	<invalid loc>	static method __derived_enum_equals(_:_:)
+1.17ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/MultipartFormData.swift:347:17	instance method writeEncodedData(to:)
+1.16ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/NetworkReachabilityManager.swift:82:42	getter isReachableOnCellular
+1.14ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/AFError.swift:775:38	getter localizedDescription
+1.13ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/SessionDelegate.swift:120:10	instance method attemptServerTrustAuthentication(with:)
+1.11ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ServerTrustEvaluation.swift:255:17	instance method evaluate(_:forHost:)
+1.11ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Request.swift:1393:10	instance method appendStreamCompletion(on:stream:)
+1.08ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/NetworkReachabilityManager.swift:137:24	initializer init()
+1.07ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/NetworkReachabilityManager.swift:85:48	getter isReachableOnEthernetOrWiFi
+1.05ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Session.swift:993:10	instance method perform(_:)
+1.05ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Request.swift:136:32	getter isResumed
+1.03ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Request.swift:138:34	getter isSuspended
+1.03ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Request.swift:1316:10	instance method didReceive(data:)
+1.02ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Validation.swift:105:22	instance method validate(contentType:response:)
+1.02ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/RequestTaskMap.swift:109:29	getter isEventsEmpty
+1.02ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Request.swift:140:34	getter isCancelled
+1.02ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/MultipartFormData.swift:551:18	instance method mimeType(forPathExtension:)
+1.01ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/ServerTrustEvaluation.swift:473:47	getter certificates
+1.01ms	/Users/alkincakiralar/Desktop/SPMCacheTest/SourcePackages/checkouts/Alamofire/Source/Request.swift:142:33	getter isFinished

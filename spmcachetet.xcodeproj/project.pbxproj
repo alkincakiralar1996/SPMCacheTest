@@ -14,7 +14,21 @@
 		448395D829B0B6CB0048A1EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448395D629B0B6CB0048A1EF /* Main.storyboard */; };
 		448395DA29B0B6CC0048A1EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448395D929B0B6CC0048A1EF /* Assets.xcassets */; };
 		448395DD29B0B6CC0048A1EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448395DB29B0B6CC0048A1EF /* LaunchScreen.storyboard */; };
+		44C36C5D29B72B21000CD1BA /* spmcachetetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C36C5C29B72B21000CD1BA /* spmcachetetTests.swift */; };
+		44C36C6529B72CE9000CD1BA /* KRProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 44C36C6429B72CE9000CD1BA /* KRProgressHUD */; };
+		44C36C6829B72CFC000CD1BA /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 44C36C6729B72CFC000CD1BA /* Swinject */; };
+		44C36C6B29B72D0B000CD1BA /* Instructions in Frameworks */ = {isa = PBXBuildFile; productRef = 44C36C6A29B72D0B000CD1BA /* Instructions */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44C36C5E29B72B21000CD1BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 448395C529B0B6CB0048A1EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 448395CC29B0B6CB0048A1EF;
+			remoteInfo = spmcachetet;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		448395CD29B0B6CB0048A1EF /* spmcachetet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spmcachetet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,6 +39,8 @@
 		448395D929B0B6CC0048A1EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		448395DC29B0B6CC0048A1EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		448395DE29B0B6CC0048A1EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44C36C5A29B72B21000CD1BA /* spmcachetetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = spmcachetetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C36C5C29B72B21000CD1BA /* spmcachetetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spmcachetetTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +48,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44C36C6529B72CE9000CD1BA /* KRProgressHUD in Frameworks */,
+				44C36C6B29B72D0B000CD1BA /* Instructions in Frameworks */,
 				4442DC1929B0BD4C008F158E /* Alamofire in Frameworks */,
+				44C36C6829B72CFC000CD1BA /* Swinject in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44C36C5729B72B21000CD1BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				448395CF29B0B6CB0048A1EF /* spmcachetet */,
+				44C36C5B29B72B21000CD1BA /* spmcachetetTests */,
 				448395CE29B0B6CB0048A1EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				448395CD29B0B6CB0048A1EF /* spmcachetet.app */,
+				44C36C5A29B72B21000CD1BA /* spmcachetetTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +95,14 @@
 				448395DE29B0B6CC0048A1EF /* Info.plist */,
 			);
 			path = spmcachetet;
+			sourceTree = "<group>";
+		};
+		44C36C5B29B72B21000CD1BA /* spmcachetetTests */ = {
+			isa = PBXGroup;
+			children = (
+				44C36C5C29B72B21000CD1BA /* spmcachetetTests.swift */,
+			);
+			path = spmcachetetTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,10 +123,31 @@
 			name = spmcachetet;
 			packageProductDependencies = (
 				4442DC1829B0BD4C008F158E /* Alamofire */,
+				44C36C6429B72CE9000CD1BA /* KRProgressHUD */,
+				44C36C6729B72CFC000CD1BA /* Swinject */,
+				44C36C6A29B72D0B000CD1BA /* Instructions */,
 			);
 			productName = spmcachetet;
 			productReference = 448395CD29B0B6CB0048A1EF /* spmcachetet.app */;
 			productType = "com.apple.product-type.application";
+		};
+		44C36C5929B72B21000CD1BA /* spmcachetetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44C36C6029B72B21000CD1BA /* Build configuration list for PBXNativeTarget "spmcachetetTests" */;
+			buildPhases = (
+				44C36C5629B72B21000CD1BA /* Sources */,
+				44C36C5729B72B21000CD1BA /* Frameworks */,
+				44C36C5829B72B21000CD1BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44C36C5F29B72B21000CD1BA /* PBXTargetDependency */,
+			);
+			name = spmcachetetTests;
+			productName = spmcachetetTests;
+			productReference = 44C36C5A29B72B21000CD1BA /* spmcachetetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -105,6 +162,10 @@
 					448395CC29B0B6CB0048A1EF = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					44C36C5929B72B21000CD1BA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 448395CC29B0B6CB0048A1EF;
+					};
 				};
 			};
 			buildConfigurationList = 448395C829B0B6CB0048A1EF /* Build configuration list for PBXProject "spmcachetet" */;
@@ -118,12 +179,16 @@
 			mainGroup = 448395C429B0B6CB0048A1EF;
 			packageReferences = (
 				4442DC1729B0BD4C008F158E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				44C36C6329B72CE9000CD1BA /* XCRemoteSwiftPackageReference "KRProgressHUD" */,
+				44C36C6629B72CFC000CD1BA /* XCRemoteSwiftPackageReference "Swinject" */,
+				44C36C6929B72D0B000CD1BA /* XCRemoteSwiftPackageReference "Instructions" */,
 			);
 			productRefGroup = 448395CE29B0B6CB0048A1EF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				448395CC29B0B6CB0048A1EF /* spmcachetet */,
+				44C36C5929B72B21000CD1BA /* spmcachetetTests */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +201,13 @@
 				448395DD29B0B6CC0048A1EF /* LaunchScreen.storyboard in Resources */,
 				448395DA29B0B6CC0048A1EF /* Assets.xcassets in Resources */,
 				448395D829B0B6CB0048A1EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44C36C5829B72B21000CD1BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +224,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		44C36C5629B72B21000CD1BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C36C5D29B72B21000CD1BA /* spmcachetetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44C36C5F29B72B21000CD1BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 448395CC29B0B6CB0048A1EF /* spmcachetet */;
+			targetProxy = 44C36C5E29B72B21000CD1BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		448395D629B0B6CB0048A1EF /* Main.storyboard */ = {
@@ -295,7 +383,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = 3UVKHQUHJ4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = spmcachetet/Info.plist;
@@ -325,7 +413,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = 3UVKHQUHJ4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = spmcachetet/Info.plist;
@@ -345,6 +433,42 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		44C36C6129B72B21000CD1BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 11;
+				DEVELOPMENT_TEAM = YD936JB5S9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.spmcachetetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/spmcachetet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/spmcachetet";
+			};
+			name = Debug;
+		};
+		44C36C6229B72B21000CD1BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 11;
+				DEVELOPMENT_TEAM = YD936JB5S9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.spmcachetetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/spmcachetet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/spmcachetet";
 			};
 			name = Release;
 		};
@@ -369,6 +493,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		44C36C6029B72B21000CD1BA /* Build configuration list for PBXNativeTarget "spmcachetetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44C36C6129B72B21000CD1BA /* Debug */,
+				44C36C6229B72B21000CD1BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -380,6 +513,30 @@
 				kind = branch;
 			};
 		};
+		44C36C6329B72CE9000CD1BA /* XCRemoteSwiftPackageReference "KRProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krimpedance/KRProgressHUD.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		44C36C6629B72CFC000CD1BA /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		44C36C6929B72D0B000CD1BA /* XCRemoteSwiftPackageReference "Instructions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ephread/Instructions.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -387,6 +544,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4442DC1729B0BD4C008F158E /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		44C36C6429B72CE9000CD1BA /* KRProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44C36C6329B72CE9000CD1BA /* XCRemoteSwiftPackageReference "KRProgressHUD" */;
+			productName = KRProgressHUD;
+		};
+		44C36C6729B72CFC000CD1BA /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44C36C6629B72CFC000CD1BA /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		44C36C6A29B72D0B000CD1BA /* Instructions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44C36C6929B72D0B000CD1BA /* XCRemoteSwiftPackageReference "Instructions" */;
+			productName = Instructions;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

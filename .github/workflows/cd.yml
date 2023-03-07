@@ -9,75 +9,15 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      #  - name: Restore Cached Dependencies
-      #    id: cache-primes-restore
-      #    uses: actions/cache/restore@v3
-      #    with:
-      #     path: |
-      #       SourcePackages/
-      #     key: ${{ runner.os }}-primes
-
       - name: "Cache: SPM"
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
-            path: |
-              ~/Library/Developer/Xcode/DerivedData
-              .build/SourcePackages
+            path: SourcePackages
             key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
             restore-keys: |
               ${{ runner.os }}-spm-
-          # path: ~/Library/Devessloper/Xcode/DerivedData/spmcachetet*/SourcePackages/
-          # key: ${{ runner.os }}-spm-${{ hashFiles('spmcachetet.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
-          # restore-keys: |
-          #   ${{ runner.os }}-spm-
 
       - name: Xcode Build
         uses: actions/checkout@v1
-      - run: xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -clonedSourcePackagesDirPath SourcePackages -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
-
-      #  - name: Save Cached Dependencies
-      #    id: cache-primes-save
-      #    uses: actions/cache/save@v3
-      #    with:
-      #     path: |
-      #       SourcePackages/
-      #     key: ${{ steps.cache-primes-restore.outputs.cache-primary-key }}
-
-      #  - name: Swift Packages Cache
-      #    uses: actions/cache@v2
-      #    id: cache
-      #    with:
-      #     path: |
-      #       SourcePackages/
-      #     # key: ${{ runner.os }}-deps-v1-${{ hashFiles('spmcachetet.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
-      #     key: spm-cache-{{ checksum "spmcachetet.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved" }}
-      #     restore-keys: spm-cache-{{ checksum "spmcachetet.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved" }}
-
-
-#       with:
-#         path: |
-#           path/to/dependencies
-#           some/other/dependencies
-#         key: ${{ steps.cache-primes-restore.outputs.cache-primary-key }}
-
-#       version: 2.1
-
-# jobs:
-#asdas
-#   build:
-#     macos:
-#       xcode: "11.6.0"
-#     steps:
-#       - checkout
-#       - restore_cache: 
-#           key: spm-cache-{{ checksum "spm-cache-test.xcodeproj/project.xcworkspace/ xcshareddata/swiftpm/Package.resolved" }}
-#   - run:
-#           name: Install missing gems
-#           command: bundle install
-#       - run:
-#           name: Build and test
-#           command: bundle exec fastlane build_and_test
-#       - save_cache:
-#           paths:
-#             - SourcePackages/
-#           key: spm-cache-{{ checksum "spm-cache-test.xcodeproj/ project.xcworkspace/xcshareddata/ swiftpm/Package.resolved" }}
+      # - run: xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -clonedSourcePackagesDirPath SourcePackages -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
+      - run: bundle exec fastlane beta
