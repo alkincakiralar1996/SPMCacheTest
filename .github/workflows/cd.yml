@@ -20,10 +20,14 @@ jobs:
       - name: "Cache: SPM"
         uses: actions/cache@v3
         with:
-          path: ~/Library/Developer/Xcode/DerivedData/spmcachetet*/SourcePackages/
-          key: ${{ runner.os }}-spm-${{ hashFiles('spmcachetet.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
-          restore-keys: |
-            ${{ runner.os }}-spm-
+            path: .build
+            key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
+            restore-keys: |
+              ${{ runner.os }}-spm-
+          # path: ~/Library/Developer/Xcode/DerivedData/spmcachetet*/SourcePackages/
+          # key: ${{ runner.os }}-spm-${{ hashFiles('spmcachetet.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
+          # restore-keys: |
+          #   ${{ runner.os }}-spm-
 
       - name: Xcode Build
         uses: actions/checkout@v1
