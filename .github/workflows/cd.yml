@@ -20,4 +20,4 @@ jobs:
       - name: Xcode Build
         uses: actions/checkout@v1
       # - run: xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -clonedSourcePackagesDirPath SourcePackages -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
-      - run: bundle exec fastlane beta
+      - run: fastlane beta
