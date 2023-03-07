@@ -18,9 +18,9 @@ jobs:
       #     key: ${{ runner.os }}-primes
 
       - name: "Cache: SPM"
-        uses: actions/cache@v3
+        uses: actions/cache@v2
         with:
-            path: /Users/runner/Library/Developer/Xcode/DerivedData/spmcachetet-bwrourzvvavfwebiubkpzheduuwk/SourcePackages/
+            path: SourcePackages/
             key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
             restore-keys: |
               ${{ runner.os }}-spm-
@@ -31,7 +31,7 @@ jobs:
 
       - name: Xcode Build
         uses: actions/checkout@v1
-      - run: xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
+      - run: xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -clonedSourcePackagesDirPath SourcePackages -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
 
       #  - name: Save Cached Dependencies
       #    id: cache-primes-save
