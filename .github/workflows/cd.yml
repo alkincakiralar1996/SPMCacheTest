@@ -31,7 +31,7 @@ jobs:
 
       - name: Xcode Build
         uses: actions/checkout@v1
-      - run: xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -clonedSourcePackagesDirPath /Users/runner/Library/Developer/Xcode/DerivedData/spmcachetet-bwrourzvvavfwebiubkpzheduuwk/SourcePackages/ -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
+      - run: xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
 
       #  - name: Save Cached Dependencies
       #    id: cache-primes-save
