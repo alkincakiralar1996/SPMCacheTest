@@ -20,7 +20,9 @@ jobs:
       - name: "Cache: SPM"
         uses: actions/cache@v2
         with:
-            path: SourcePackages/
+            path: |
+              ~/Library/Developer/Xcode/DerivedData
+              .build/SourcePackages
             key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
             restore-keys: |
               ${{ runner.os }}-spm-
