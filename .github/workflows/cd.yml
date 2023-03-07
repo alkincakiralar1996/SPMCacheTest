@@ -19,6 +19,6 @@ jobs:
 
       - name: Xcode Build
         uses: actions/checkout@v1
-      - run: echo test; echo bb
+      - run: cd /Users/runner/work/SPMCacheTest/SPMCacheTest; ls; echo dfede
       # - run: xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -clonedSourcePackagesDirPath SourcePackages -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
       # - run: fastlane beta
