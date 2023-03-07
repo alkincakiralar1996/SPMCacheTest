@@ -12,13 +12,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
-      - name: "Cache: SPM"
-        uses: actions/cache@v3
-        with:
-            path: /Users/runner/work/SPMCacheTest/SPMCacheTest/SourcePackages
-            key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
-            restore-keys: |
-              ${{ runner.os }}-spm-
+      # - name: "Cache: SPM"
+      #   uses: actions/cache@v3
+      #   with:
+      #       path: /Users/runner/work/SPMCacheTest/SPMCacheTest/SourcePackages
+      #       key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
+      #       restore-keys: |
+      #         ${{ runner.os }}-spm-
 
       - name: Devamke
         run: xcodebuild -project "spmcachetet.xcodeproj" -scheme "spmcachetet" -clonedSourcePackagesDirPath /Users/runner/work/SPMCacheTest/SPMCacheTest/SourcePackages -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO -disableAutomaticPackageResolution -skipPackageUpdates
